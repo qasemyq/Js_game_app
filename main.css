@@ -10,43 +10,36 @@
   width: 400px;
   height: 300px;
   border-bottom: 1px solid black;
-  position: absolute; /* ba in mishe ye onsor ro avord vasate safhe ke be top buttom left rift mishe tanzimesh kard */
+  position: absolute; 
   top: 50%;
   left: 50%;
   transform: translate(
     -50%,
     -50%
-  ); /* - 50 % dar rastaye x va - 50 % dar rastaye y */
-  overflow: hidden; /* inja overflow hidden midam yani harchi az in container birun zad dide nashe ke chon rock mire birun az in conteiner baes mishe dide nashe */
+  ); 
+  overflow: hidden; 
   cursor: pointer;
 }
-
 #jumper {
   background-color: rgb(240, 10, 10);
   height: 20px;
   width: 20px;
-  position: relative; /* relative tabe pedarsh mishe  yani age top va lefo harchi bedam dagigan ba onsore pedaresh taggyir mikone */
-  top: 280px; /* chon 20px height dare va bala kolle height parentesh 300px ast behesh 280px */
-  /* animation: Jump 1s infinite;  chon inja mikham vagti click kardam jump kone pas ye .animate misazam ta ba js betunam ye function bedam har moge click shod jump kone  */
+  position: relative; 
+  top: 280px; 
 }
-
-/* inja miyam ye class animate dorost mikonam ta betunam azash estefade konam  */
 .animate {
   animation: Jump 1s infinite;
 }
-
 #rock {
   height: 10px;
   width: 20px;
   background-color: black;
   position: relative;
   top: 270px;
-  left: 380px; /* miyad michasbe be samte rast chon parentesh widthesh 400px hast va khodesh ham widthesh 20px hast */
-  animation: Rock 1s infinite linear; /* Rock ro pain tarif kardam midem be animation bad migam 1second tul bekeshe az avval be akhar berese va infinite yani hey inkaro edame bede va linear yani sorate avval va kahresh yeksan hast */
+  left: 380px; 
+  animation: Rock 1s infinite linear; 
 }
-
 @keyframes Rock {
-  /* ba in ye animation be rock midam va bad miram bala tu #rock minevisam animation va esme in motaggayer Rock ro behesh midam */
   0% {
     left: 400px;
   }
