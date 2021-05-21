@@ -1,6 +1,6 @@
 const jumper = document.getElementById('jumper')
 const rock = document.getElementById('rock')
-//
+
 function jump (){
      if (jumper.classList != "animate") {
         jumper.classList.add("animate")
